@@ -6,21 +6,42 @@
     <title>Formulario</title>
 </head>
 <body>
-    <informaciion_general>
-        <h3>Información Personal</h3>
-        <textarea>Nombre</textarea>
-        <textarea>Apellido</textarea>
-        <input style="date">Fecha de Nacimiento</input>
-        <select name="Genero">
-            <option>Masculino</option>
-            <option>Femenino</option>
-            <option>Otro</option>
-            <option>requerido</option>
-        </select>
-    </informaciion_general>
-    <infotmació<n_de_contacto>
-        <h3>Informacion de contacto</h3>
-        <input type="email">Correo electronico</input>
+    <form action="Procesar-registro.php" method="POST">
+
+        <fieldset>
+            <legend>Información Personal</legend>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required><br><br>
+
+            <label for="Apellido">Apellido</label>
+            <input type="text" id="apellido" required><br><br>
+
+            <label name="fecha">Fecha de Nacimiento</label>
+            <input type="date" required><br><br>
+
+            <label name="Género">Género</label>
+            <select name="Genero">
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Otro</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Informacion de contacto</legend>
+
+            <label for="Correo">Correo electronico</label>
+            <input type="email" id="correo"><br><br>
+
+            <label for="teléfono">Telefono</label>
+            <input type="text" id="teléfono"required><br><br>
+
+            <label for="Dirección">Dirección</label><br>
+            <textarea required></textarea>
+
+        </fieldset>
 
 
     </n_de_contacto>

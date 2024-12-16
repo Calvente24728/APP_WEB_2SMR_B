@@ -1,0 +1,168 @@
+/* ------ Cambios generales aplicados a todas las etiquetas ------ */
+
+body{
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+/* ------ Cabecero ------ */
+
+.cabecera{
+    background-color: #010101;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cabecera__logo{
+    width: 20rem;
+}
+
+.cabecera__menu{
+    margin: 2rem;
+}
+
+.cabecera__menu__lista{
+    display: flex;
+}
+
+.cabecera__menu__lista__enlace{
+    margin: 1rem;
+    color: aliceblue;
+    font-size: 1,2rem;
+}
+
+.cabecera__menu__lista__enlace:hover{
+    color: greenyellow;
+}
+/* ------ Principal ------ */
+
+.principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+}
+
+.principal__texto{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.principal__viajes{
+    display: flex;
+    width: 90%;
+}
+
+.principal__viajes__articulo{
+    width:30%;
+    margin: 1rem;
+
+}
+
+.principal__viajes__articulo__img{
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.principal__viajes__articulo__div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal__viajes__articulo__div__texto{
+    font-weight: bold;
+    font-size: 1,2rem;
+}
+
+.principal__viajes__articulo__div__enlace{
+    background-color: grey;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.principal__viajes__articulo__div__enlace:hover{
+    background-color: #010101;
+}
+
+.principal__contacto{
+    width: 100%;
+    background-color: #010101;
+    padding: 7.5rem;
+}
+
+.principal__contacto__form__marco{
+    border: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.principal__contacto__form__marco__titulo{
+   width: 100%;
+   text-align: center;
+   color: aliceblue;
+   font-size: 2rem;
+   margin-bottom: 3rem;
+}
+
+.principal__contacto__form__marco__label{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal__contacto__form__marco__email{
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    border: 0;
+    font-size: 95%;
+
+}
+
+.principal__contacto__form__marco__boton{
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.25rem;
+    background-color: grey;
+    color: aliceblue;
+    font-size: 95%;
+    
+}
+
+.principal__contacto__form__marco__boton:hover{
+    background-color: yellow;
+    color: #010101;
+}
+/* ------ Pie ------ */
+
+.piepagina{
+    width: 100%;
+    background-color: grey;
+    padding: 1rem;
+}
+
+.piepagina__lista{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: #010101;
+}
+
+.piepagina__lista__enlace:hover{
+    font-weight: bold;
+}
+
+.piepagina__lista__enlace{
+    color: #010101;
+}
